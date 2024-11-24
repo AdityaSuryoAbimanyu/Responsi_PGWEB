@@ -1,0 +1,262 @@
+/* Gaya umum untuk body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Warna latar belakang yang lembut */
+    color: #333; /* Warna teks yang lebih gelap untuk kontras */
+}
+
+/* Gaya untuk modal (popup) */
+.modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed; /* Tetap di tempat */
+    z-index: 1000; /* Di atas elemen lainnya */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    overflow: auto; /* Mengizinkan scroll jika diperlukan */
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan hitam */
+    padding-top: 60px; /* Jarak dari atas */
+    animation: fadeIn 0.5s; /* Efek animasi muncul */
+}
+
+/* Animasi untuk modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Gaya untuk konten modal */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; /* 5% dari atas dan tengah */
+    padding: 30px;
+    border: 1px solid #ddd;
+    width: 90%; /* Lebar 90% layar */
+    max-width: 600px; /* Lebar maksimum modal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    border-radius: 12px; /* Sudut membulat */
+    animation: slideIn 0.5s ease-out; /* Efek animasi masuk */
+}
+
+/* Animasi untuk modal content */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Gaya untuk tombol tutup */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Gaya untuk tabel di dalam modal */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Gaya untuk header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: slideDown 0.5s ease-in-out; /* Animasi masuk untuk header */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Gaya untuk navigasi */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #45a049; /* Efek hover pada navbar */
+    border-radius: 5px;
+}
+
+/* Gaya untuk footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Gaya untuk form kontak */
+form {
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex; /* Untuk memastikan elemen mengikuti urutan vertikal */
+    flex-direction: column; /* Elemen dalam formulir berjajar vertikal */
+    gap: 15px; /* Jarak antar elemen */
+}
+
+/* Hover pada form untuk memberikan efek */
+form:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 0; /* Pastikan margin default dihapus */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4CAF50; /* Warna border saat fokus */
+    outline: none;
+}
+
+form button {
+    margin: 420px;
+    align-self: center; /* Posisikan tombol di tengah */
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Tombol navigasi carousel */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

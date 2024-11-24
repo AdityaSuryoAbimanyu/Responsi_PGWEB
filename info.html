@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info - MY TRIP MY SUMUT ADVENTURE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>MY TRIP MY SUMUT ADVENTURE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="map.html">Peta Wisata</a></li>
+                <li><a href="info.html" target="_blank">Info</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Modal untuk Info -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 style="text-align: center;">Informasi Pembuat</h2>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Aditya Suryo Abimanyu</td>
+                </tr>
+
+                <tr>
+                    <th>NIM</th>
+                    <td>23/517143/SV/22740</td>
+                </tr>
+
+                <tr>
+                    <th>GitHub</th>
+                    <td>
+                        <a href="https://github.com/AdityaSuryoAbimanyu" target="_blank"
+                            rel="noopener nooreferrer">https://github.com/AdityaSuryoAbimanyu</a>
+                    </td>
+                </tr>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Wisata Sumatera Utara</p>
+        <img src="Background/logoSV.png" alt="Logo Wisata Sumut" style="width: 250px; height: auto;">
+    </footer>
+
+    <script>
+        // Fungsi untuk menampilkan dan menutup modal
+        document.getElementById('infoModal').style.display = 'block';
+
+        document.getElementById('closeModal').onclick = function() {
+            document.getElementById('infoModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('infoModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

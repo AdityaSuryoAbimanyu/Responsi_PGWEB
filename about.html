@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - MY TRIP MY SUMUT ADVENTURE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>MY TRIP MY SUMUT ADVENTURE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link" id="homeLink">Beranda</a></li>
+                <li><a href="about.html" class="nav-link" id="aboutLink">Tentang</a></li>
+                <li><a href="map.html" class="nav-link" id="mapLink">Peta Wisata</a></li>
+                <li><a href="info.html" class="nav-link" id="infoLink">Info</a></li>
+                <li><a href="contact.html" class="nav-link" id="contactLink">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h2 style="text-align: center;">Tentang Sumatera Utara</h2>
+        <p style="text-align: center;">Sumatera Utara, dengan keindahan alam yang memukau dan kekayaan budaya yang beragam, menjadi salah satu
+            tujuan wisata unggulan di Indonesia. Dari pesona Danau Toba yang megah hingga keindahan alam pegunungan di
+            Berastagi, setiap sudut provinsi ini menawarkan pengalaman yang tak terlupakan. Tidak hanya alamnya yang
+            menawan, tetapi juga warisan budaya Batak yang kental, terjaga dalam tradisi dan situs bersejarah di
+            berbagai daerah. Persebaran wisata di Sumatera Utara mencakup berbagai jenis destinasi, mulai dari wisata
+            alam, budaya, hingga petualangan yang memikat hati para pengunjung. Setiap destinasi memiliki daya tarik
+            tersendiri, menciptakan keberagaman yang menjadikan Sumatera Utara sebagai destinasi wisata yang wajib
+            dikunjungi bagi siapa saja yang ingin menikmati keindahan Indonesia yang sesungguhnya.</p>
+        
+
+        <!-- Carousel Gambar -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="Background/Bukit Holbung.jpg" alt="Destinasi 1" class="carousel-image">
+                <img src="Background/Danau Toba.jpg" alt="Destinasi 2" class="carousel-image">
+                <img src="Background/Pantai Parbaba.jpg" alt="Destinasi 3" class="carousel-image">
+                <img src="Background/Pulau Samosir.jpg" alt="Destinasi 4" class="carousel-image">
+                <img src="Background/TNGL.jpg" alt="Destinasi 5" class="carousel-image">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Wisata Sumatera Utara</p>
+        <img src="Background/logoSV.png" alt="Logo Wisata Sumut" style="width: 250px; height: auto;">
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        function moveSlide(n) {
+            const slides = document.querySelectorAll('.carousel-image');
+            slideIndex += n;
+
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            const carouselImages = document.querySelector('.carousel-images');
+            carouselImages.style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+    </script>
+</body>
+
+</html>

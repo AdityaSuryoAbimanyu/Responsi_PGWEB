@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Wisata - MY TRIP MY SUMUT ADVENTURE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Peta Wisata Kabupaten Toba</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="peta.html">Peta Wisata</a></li>
+                <li><a href="info.html" id="infoButton">Info</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="map">
+        <h2>Peta Wisata</h2>
+        <div id="mapContainer" style="height: 500px;"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Wisata Sumatera Utara</p>
+        <img src="Background/logoSV.png" alt="Logo Wisata Sumut" style="width: 250px; height: auto;">
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Inisialisasi peta
+var map = L.map('mapContainer').setView([2.6307344287460896, 98.75815156491267], 8); // Koordinat Kabupaten Toba
+
+// Menambahkan layer peta dari OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+}).addTo(map);
+
+// Mengambil data wisata dari file JSON
+fetch('data/wisata.json')
+    .then(response => response.json())
+    .then(data => {
+        // Menambahkan marker untuk setiap lokasi wisata
+        data.forEach(item => {
+            L.marker([item.lat, item.lon]).addTo(map)
+                .bindPopup('<strong>' + item.nama + '</strong><br>' + item.deskripsi);
+        });
+    })
+    .catch(error => console.error('Error loading the data:', error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+    {
+        "nama": "Danau Toba",
+        "deskripsi": "Danau vulkanik terbesar di dunia.",
+        "lat": 2.761502394708316,
+        "lon": 98.65007996375847
+    },
+    {
+        "nama": "Pulau Samosir",
+        "deskripsi": "Pulau di tengah Danau Toba yang kaya akan budaya.",
+        "lat": 2.5774167691477796, 
+        "lon": 98.814051192822960
+    },
+    {
+        "nama": "Air Terjun Sipiso-piso",
+        "deskripsi": "Air terjun yang indah dengan pemandangan Danau Toba.",
+        "lat": 2.9165087269385253, 
+        "lon": 98.5194716090509
+    },
+    {
+        "nama": "Taman Wisata Iman",
+        "deskripsi": "Tempat wisata religi dengan pemandangan yang menakjubkan.",
+        "lat": 2.74220748497629, 
+        "lon": 98.37228847030731
+    },
+    {
+        "nama": "Museum Batak",
+        "deskripsi": "Museum yang menyimpan sejarah dan budaya Batak.",
+        "lat": 2.652891900240374, 
+        "lon": 98.8597934012718
+    },
+    {
+        "nama": "Pantai Parbaba",
+        "deskripsi": "Pantai yang indah dengan pasir putih dan air jernih.",
+        "lat": 2.695824660145369, 
+        "lon": 98.68992800711212
+    },
+    {
+        "nama": "Air Terjun Silima-lima",
+        "deskripsi": "Air terjun yang menakjubkan dengan suasana alam yang tenang.",
+        "lat": 1.5337757733083452, 
+        "lon": 99.17015643788237
+    },
+    {
+        "nama": "Bukit Holbung",
+        "deskripsi": "Tempat terbaik untuk melihat pemandangan Danau Toba dari ketinggian.",
+        "lat": 2.530087381224346,
+        "lon": 98.69731454158318
+    },
+    {
+        "nama": "Pemandian Air Panas Rianiate",
+        "deskripsi": "Tempat relaksasi dengan pemandian air panas alami.",
+        "lat": 2.5393361460197643, 
+        "lon": 98.73612249626083
+    },
+    {
+        "nama": "Taman Eden 100",
+        "deskripsi": "Tempat wisata alam dengan kebun bunga yang indah.",
+        "lat": 2.591302136838785, 
+        "lon": 99.03885560907302
+    },
+    {
+        "nama": "Kota Parapat",
+        "deskripsi": "Kota kecil yang menjadi pintu gerbang menuju Danau Toba.",
+        "lat": 2.660705336658203, 
+        "lon": 98.93875982824068
+    },
+    {
+        "nama": "Pulau Tulas",
+        "deskripsi": "Pulau kecil yang menawarkan keindahan alam dan ketenangan.",
+        "lat": 2.6434842041812536, 
+        "lon": 98.64536356092194
+    },
+    {
+        "nama": "Tanjung Unta",
+        "deskripsi": "Sebuah tanjung yang terletak di tepi Danau Toba, dikenal dengan pemandangan alamnya yang menakjubkan.",
+        "lat": 2.7725437575366496,  
+        "lon": 98.80826395625907
+    },
+    {
+        "nama": "Danau Siombak",
+        "deskripsi": "Danau ini dikenal dengan keindahan alamnya yang tenang dan damai, dikelilingi oleh pepohonan hijau dan pemandangan yang menakjubkan.",
+        "lat": 3.726754357737772,   
+        "lon": 98.66319982439677
+    },
+    {
+        "nama": "Taman Wisata Alam Sibolangit",
+        "deskripsi": "Taman ini dikelilingi oleh hutan tropis yang lebat, air terjun, dan sungai yang jernih.",
+        "lat": 3.3301924467157287, 
+        "lon": 98.58097303973722
+    },
+    {
+        "nama": "Hutaginjang Geosite View Point",
+        "deskripsi": "Tempat dengan pemandangan spektakuler Danau Toba dari ketinggian, bagian dari kaldera Toba yang bersejarah.",
+        "lat": 2.3149368389489, 
+        "lon": 98.97102671930386
+    },
+    {
+        "nama": "Sipinsur Park Geosite and Pine Forest",
+        "deskripsi": "Taman yang indah dengan pemandangan menakjubkan Danau Toba dan hutan pinus yang tenang, sempurna untuk rekreasi keluarga dan berkemah.",
+        "lat": 2.3293591970790812, 
+        "lon": 98.88143681089792
+    },
+    {
+        "nama": "Bukit Lawang",
+        "deskripsi": "Bukit Lawang adalah destinasi wisata yang terletak di kaki Taman Nasional Gunung Leuser, terkenal dengan keindahan hutan tropis dan keberadaan orangutan.",
+        "lat": 3.5499659944543733, 
+        "lon": 98.12441104166959
+    },
+    {
+        "nama": "Tangkahan",
+        "deskripsi": "Tangkahan identik dengan panorama hutan hujan tropis yang indah dan sering disebut sebagai surga tersembunyi di Taman Nasional Gunung Leuser.",
+        "lat": 3.687112739844821, 
+        "lon": 98.07509116061493
+    },
+    {
+        "nama": "Taman Nasional Gunung Leuser (TNGL)",
+        "deskripsi": "Taman Nasional ini terkenal dengan ke anekaragaman hayati dan keindahan alamnya.",
+        "lat": 3.5223001566296417, 
+        "lon": 97.46296064105654
+    }
+]
